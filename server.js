@@ -6,7 +6,13 @@ const express = require('express')
 
 var connectCounter = 0;
 
-app.use(express.static('public'))
+//app.use(express.static('public'))
+//
+
+http.on('listening', () => {
+ console.log('Listening on port 3000')
+})
+
 app.set('port', process.env.PORT || 3000)
 
 app.get('/', function(req, res){
@@ -16,12 +22,12 @@ app.get('/', function(req, res){
 io.on('connection', function(socket){  
     connectCounter = socket.client.conn.server.clientsCount;
     io.emit('connectCounter', connectCounter);
-  console.log('a user connected, now' + connectCounter);
+    console.log('a user connected, now' + connectCounter);
 });
 
-http.listen(3000, function(){
-  console.log('listening on *:3000');
-});
+
+
+http.listen(process.env.PORT || 3000)
 
 
 /*
