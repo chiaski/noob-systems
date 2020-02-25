@@ -3,7 +3,6 @@ html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
-
  :root {
 
      --bg-color: #fdfdfd;
@@ -76,7 +75,6 @@ html { font-family: 'Inter', sans-serif; }
 
 
 
-
 .box.center{
     margin:auto;
   display: flex;
@@ -103,6 +101,9 @@ html { font-family: 'Inter', sans-serif; }
  h6 {
     font-weight:500;
     margin:.5em 0;
+    display: block;
+    width:100%;
+     text-align: center;
     word-break: break-word;
  }
 

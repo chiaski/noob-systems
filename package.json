@@ -30,7 +30,9 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "jquery": "^3.4.1",
+    "socket.io": "^2.3.0",
     "vue": "^2.6.11"
   }
 }
