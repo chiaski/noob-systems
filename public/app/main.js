@@ -255,3 +255,33 @@ function chooseSound(sound){
     return sounder[sound][choose];
     
 }
+
+
+var $cursor = $('.cursor');
+
+
+// If cursor is moving
+
+function moveCursor(e) {
+  $cursor.addClass('is-moving');
+  $cursor.css({"top": e.pageY, "left": e.pageX});
+
+  clearTimeout(timer2);
+
+   var timer2 = setTimeout(function() {
+       $cursor.removeClass('is-moving');
+   }, 300);
+}
+
+function enlargeCursor(e){
+    $cursor.removeClass('is-moving');
+    $cursor.addClass('is-hovering');
+}
+
+function unenlargeCursor(e){
+    $cursor.removeClass('is-hovering');
+}
+
+$(window).on('mousemove', moveCursor);
+$("button").on('mouseenter', enlargeCursor);
+$("button").on('mouseleave', unenlargeCursor);
