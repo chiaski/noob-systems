@@ -1,9 +1,8 @@
+@import url("https://use.typekit.net/qxd7seh.css");
 
-  @import url("https://use.typekit.net/qxd7seh.css");
-
-body{
-    background:#000000;
-    color:#fff;
+body {
+    background: #000000;
+    color: #fff;
     font-family: input-mono, monospace;
     font-weight: 400;
     font-style: normal;
@@ -12,88 +11,108 @@ body{
     -moz-osx-font-smoothing: grayscale;
 }
 
-h1{
-    margin:0;
+h1 {
+    margin: 0;
 }
 
-#controls{
+#controls {
     position: fixed;
-    z-index:999;
+    z-index: 999;
     text-align: center;
-    padding:1em;
-    bottom:0;
+    padding: 1em;
+    bottom: 0;
 }
 
-#controls button:hover{
-    background:#000;
-    font-size:1.2em;
+#controls button:hover {
+    background: #000;
+    font-size: 1.2em;
 }
 
-#camera{
+#camera {
     box-sizing: border-box;
-    padding:.5em;
-    max-width:700px;
+    padding: .5em;
+    max-width: 700px;
 }
 
-.camera{
+.camera {
     mix-blend-mode: multiply;
-    width:100%;
+    width: 100%;
     text-align: center;
-    border:1em solid #161619;
+    border: 1em solid #161619;
     box-sizing: border-box;
 }
 
-.camera-cover{
+.camera-cover {
     position: fixed;
-    top:0; left: 0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
     background-size: cover;
-    z-index:999;
+    z-index: 999;
 }
 
 
-div[data-overlay="scanline"]{
+div[data-overlay="scanline"] {
     background-size: cover;
-    background-image:url(../camera-cover.png);
+    background-image: url(../camera-cover.png);
     mix-blend-mode: color-burn;
     opacity: 0.3;
 }
 
-div[data-overlay="lights"]{
+div[data-overlay="lights"] {
     background-size: cover;
-    background-image:url(../camera-light.jpg);
+    background-image: url(../camera-light.jpg);
     mix-blend-mode: hue;
-    opacity:0.15;
+    opacity: 0.15;
 }
 
-.camera img{
-    width:100%;
-    height:70vh;
+.camera img {
+    width: 100%;
+    height: 70vh;
 }
 
 
-.camera-details h1, .camera-details h2{
-    margin:0;
+.camera-details h1,
+.camera-details h2 {
+    margin: 0;
 }
 
-.camera-details{
+h1 {
+    font-size: 1.4em;
+    font-family: input-mono-condensed, monospace;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.camera-viewers{
+    font-family: input-mono-condensed, monospace;
+    font-weight:100;
+    text-transform: uppercase;
     
-    mix-blend-mode:difference;
-    z-index:9;
-    margin-top:-150px;
-    
-    h2{
-        font-size:1.4em;font-family: input-mono-condensed, monospace; font-weight: 700; font-style: normal;
+}
+
+.camera-details {
+
+    mix-blend-mode: difference;
+    z-index: 9;
+    margin-top: -150px;
+
+    h2 {
+        font-size: 1.4em;
+        font-family: input-mono-condensed, monospace;
+        font-weight: 700;
+        font-style: normal;
         text-transform: uppercase;
     }
-    
-    span{
-        font-size:.7em;
+
+    span {
+        font-size: .7em;
         display: block;
-        margin:0;
+        margin: 0;
         text-align: center;
     }
-    
+
 }

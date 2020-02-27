@@ -6,6 +6,8 @@ var start = false;
 
 var socket = io();
 
+var soundStates = [];
+
 $(function () {
     socket.on('connectCounter', function(update){
                 $(".camera-viewers").text("Now watching: " + update + " viewers");
@@ -18,9 +20,7 @@ $(function () {
         if(update >= 3){
             playFile(chooseSound("computer"), .2, 1);
         }
-
         if(update >= 4){
-            console.log("...");
             $("h1").text("the world is not a quiet place");
         }
         
@@ -36,6 +36,7 @@ $(function () {
         
         if(update >= 12){
             playSound("whitenoise", 0.02);
+           playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
         }
         
@@ -103,11 +104,15 @@ function magicPlay(what){
             break;
             
         case "3":
-            playSound("thunder", 0.3, 0);
+            playSound("thunder", 0.3, 0, 1);
             break;
             
         case "4":
-            playSound("church", 0.7, 0);
+            playSound("church", 0.5, 0, 1);
+            break;
+            
+        case "5":
+            playSound("piano", 0.4, 0, 1);
             break;
             
     }
@@ -115,7 +120,9 @@ function magicPlay(what){
 }
 
 
-function playSound(sound, vol, loop){
+function playSound(sound, vol, loop, repeat){
+
+    if(!repeat && soundStates.includes(sound)) return;
     
     console.log("trying to play", sound);
     
@@ -138,12 +145,15 @@ function playSound(sound, vol, loop){
 });
 
         audio.addEffect(distortion);
+        soundStates.push(sound);
         audio.play();
     });
     
 }
 
-function playFile(sound, vol, loop){
+function playFile(sound, vol, loop, repeat){
+    
+    if(!repeat && soundStates.includes(sound)) return;
     
     console.log("trying to play", sound);
     
@@ -158,6 +168,7 @@ function playFile(sound, vol, loop){
         audio.loop = true;
     }
         
+    soundStates.push(sound);
     audio.play();
     
 }

@@ -11,8 +11,10 @@ var sounder = {
     walking: ["walking-1.mp3"],
     hiss: "hiss-1.wav",
     church: "churchbells.mp3",
-    crowd: ["people-1.mp3"],
+    crowd: ["people-1.mp3", "people-2.mp3", "people-3.mp3"],
     computer: ["computer-1.mp3", "computer-2.mp3", "computer-3.mp3"],
+    piano: "piano.mp3",
+    nature: ["nature.mp3", "nature-2.mp3", "nature-3.mp3", "nature-4.mp3"]
     
 }
 
@@ -568,6 +570,24 @@ var watchers = [
         title: "Dublin City, Dublin",
         link: "http://93.107.245.52:1024/mjpg/video.mjpg",
         geography: "Dublin City, Dublin",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "New York, New York City",
+        link: "http://24.103.196.243/cgi-bin/viewer/video.jpg?r=1582820080",
+        geography: "New York, New York City",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Tirol, Innsbruck",
+        link: "http://212.186.68.38:1082/-wvhttp-01-/GetOneShot?image_size=640x480&frame_count=1000000000",
+        geography: "Tirol, Innsbruck",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Moskva, Moscow",
+        link: "http://176.57.73.231/mjpg/video.mjpg",
+        geography: "Moskva, Moscow",
         coordinates: "53.650000, -1.816670"
     }
    
