@@ -16,15 +16,21 @@ $(function () {
 
         if(update >= 4){
             console.log("...");
+            $("h1").text("the world is not a quiet place");
         }
         
         if(update >= 7){
-            playFile(chooseSound("walking", .3));
+            playFile(chooseSound("walking"), .25);
             $("h1").text("rarely are we alone");
         }
 
         if(update >= 9){
-         //   playFile(chooseSound("crowd", .2, 0));
+           playFile(chooseSound("crowd"), 0.1, 0);
+            $("h1").text("rarely are we alone");
+        }
+        
+        if(update >= 12){
+            $("h1").text("all of us follow");
         }
     })
 
@@ -60,7 +66,7 @@ $(function () {
      // Set the sound
      
      
-     playSound("whitenoise", 0.008);
+     playSound("whitenoise", 0.005);
      //playFile(chooseSound("rain"), 0.03);       
            
 });
@@ -107,11 +113,8 @@ function playSound(sound, vol, loop){
     
     let audio = new Pizzicato.Sound(src, function(){
         
-        if(!vol){
-        audio.volume = 0.1;
-    } else{
         audio.volume = vol;
-    }
+        
         if(loop == false){
             audio.loop = false;
         } else{
@@ -138,11 +141,7 @@ function playFile(sound, vol, loop){
     
     let audio = new Audio("../assets/earth/" + sound);
     
-    if(!vol){
-        audio.volume = 0.3;
-    } else{
-        audio.volume = vol;
-    }
+    audio.volume = vol;
     
     
     if(loop == false){
