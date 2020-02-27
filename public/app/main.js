@@ -80,15 +80,17 @@ $(function () {
     });
     
 });
-        
+   
+
 $(window).keypress(function (e) {
   if (e.key === ' ' || e.key === 'Spacebar') {
     // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
-    e.preventDefault()
-    console.log('Space pressed');
+      e.preventDefault()
+      console.log('space pressed');
       magic('switch');
   }
 })
+
 
 
  $( document ).click(function() {
@@ -180,8 +182,12 @@ let place = watchers[choose];
             
         case "7":
             playSound("honk", 0.7, 0, 1);
-            
             break;
+            
+        case "8":
+            playFile(chooseSound("chirp"), 0.2, 0, 1);
+            break;
+            
     }
     
 }

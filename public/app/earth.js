@@ -17,7 +17,8 @@ var sounder = {
     nature: ["nature.mp3", "nature-2.mp3", "nature-3.mp3", "nature-4.mp3"],
     door: "door.mp3",
     honk: "honk.mp3",
-    hymn: ["hymn.mp3", "hymn-2.mp3"]
+    hymn: ["hymn.mp3", "hymn-2.mp3"],
+    chirp: ["chirp-1.mp3", "chirp-2.mp3", "chirp-3.mp3", "chirp-4.mp3"]
     
 }
 
@@ -592,6 +593,30 @@ var watchers = [
         link: "http://176.57.73.231/mjpg/video.mjpg",
         geography: "Moskva, Moscow",
         coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Ile-De-France, Paris",
+        link: "http://82.65.5.211:8082/mjpg/video.mjpg",
+        geography: "Ile-De-France, Paris",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Ile-De-France, Paris",
+        link: "http://82.64.237.163:8082/mjpg/video.mjpg",
+        geography: "Ile-De-France, Paris",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Chittagong, Chittagong",
+        link: "http://137.59.180.19:8090/mjpg/video.mjpg",
+        geography: "Chittagong, Chittagong, Bangladesh",
+        coordinates: "22.333060, 91.836390"
+    },
+    {
+        title: "OFFICE",
+        link: "http://208.13.138.35/mjpg/video.mjpg",
+        geography: "Florida, USA",
+        coordinates: "28.598724, -81.356120"
     }
    
 ]
