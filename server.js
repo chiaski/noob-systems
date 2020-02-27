@@ -21,6 +21,13 @@ io.on('connection', function(socket){
     connectCounter = socket.client.conn.server.clientsCount;
     io.emit('connectCounter', connectCounter);
     console.log('a user connected, now' + connectCounter);
+    
+    
+    
+      socket.on('magic', function(what){
+        io.emit('magic', what);
+      });
+
 });
 
 

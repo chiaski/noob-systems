@@ -5,9 +5,26 @@
 var start = false;
 
 var socket = io();
-socket.on('connectCounter', function(update){
-            $(".camera-viewers").text("Now watching: " + update + " viewers");
-        })
+
+$(function () {
+    socket.on('connectCounter', function(update){
+                $(".camera-viewers").text("Now watching: " + update + " viewers");
+
+        if(update >= 3){
+            playFile(chooseSound("rain"));
+        }
+
+        if(update >= 4){
+            console.log("...");
+        }
+
+    })
+
+    socket.on("magic", function(what){
+        magicPlay(what);
+    });
+    
+});
         
 
 
@@ -34,19 +51,74 @@ socket.on('connectCounter', function(update){
      
      
      playSound("whitenoise", 0.03);
-     
-     console.log("multiple rains ", sounder["rain"])
-     
-           
+     //playFile(chooseSound("rain"), 0.03);       
            
 });
 
-function playSound(sound, vol){
+// sound layers
+
+function magic(what){
+    socket.emit("magic", what);
+}
+
+
+function magicPlay(what){
     
-    let audio = new Audio("../assets/earth/" + sounder[sound]);
+    switch(what){
+            
+        case "1":
+            playSound("press", 0.3, 0);
+            break;
+            
+    }
+    
+}
+
+
+function playSound(sound, vol, loop){
+    
+    console.log("trying to play", sound);
+    
+    let src = "../assets/earth/" + sounder[sound];
+    
+    console.log(src);
+    
+    let audio = new Pizzicato.Sound(src, function(){
+        
+        if(!vol){
+        audio.volume = 0.1;
+    } else{
+        audio.volume = vol;
+    }
+        if(loop == false){
+            audio.loop = false;
+        } else{
+            audio.loop = true;
+        }
+        
+        var distortion = new Pizzicato.Effects.Distortion({
+    gain: 0.4
+});
+
+        audio.addEffect(distortion);
+        
+        audio.play();
+    });
+    
+    //let audio = new Audio("../assets/earth/" + sounder[sound]);
+    
+    /**/
+    
+}
+
+function playFile(sound, vol){
+    
+    console.log("trying to play", sound);
+    
+    let audio = new Audio("../assets/earth/" + sound);
     
     if(!vol){
-        audio.volume = 0.1;
+        audio.volume = 0.3;
     } else{
         audio.volume = vol;
     }
@@ -56,10 +128,20 @@ function playSound(sound, vol){
     
 }
 
+function yourVoice(){
+    var voice = new Pizzicato.Sound({
+    source: 'input',
+    options: { volume: 0.8 }
+}, function() {
+    voice.play();
+});
+    
+}
+
 function chooseSound(sound){
     
-    let choose = Math.floor(Math.random() * sound.length);
+    let choose = Math.floor(Math.random() * sounder[sound].length);
     
-    return sound[choose];
+    return sounder[sound][choose];
     
 }

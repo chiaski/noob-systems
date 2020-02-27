@@ -4,7 +4,11 @@
 var sounder = {
 
     whitenoise: "whitenoise.mp3",
-    rain: ["rainy-1.ogg", "rainy-2.flac"]
+    rain: ["rainy-1.ogg", "rainy-2.flac"],
+    car: "car.mp3",
+    thunder: "thunder.wav",
+    press: "press.mp3"
+    
     
 }
 

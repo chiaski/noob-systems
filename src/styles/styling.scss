@@ -16,6 +16,13 @@ h1{
     margin:0;
 }
 
+#controls{
+    position: fixed;
+    z-index:99;
+    text-align: center;
+    padding:1em;
+}
+
 #camera{
     box-sizing: border-box;
     padding:.5em;
