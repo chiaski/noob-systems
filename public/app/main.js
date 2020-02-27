@@ -28,12 +28,17 @@ $(function () {
         if(update >= 7){
             playFile(chooseSound("walking"), .25);
             $("h1").text("rarely are we alone");
+            
             $('div[data-overlay="scanline"]').css("opacity", "0.6");
+            
+            $('div[data-overlay="leak"]').css("opacity", "0.6");
         }
 
         if(update >= 9){
            playFile(chooseSound("crowd"), 0.1, 0);
             $("h1").text("rarely are we alone");
+            
+            playFile(chooseSound("computer"), .4, 0, 1);
         }
         
         if(update >= 12){
@@ -41,12 +46,21 @@ $(function () {
             playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
             $('div[data-overlay="scanline"]').css("opacity", "0.9");
+            
+            $('div[data-overlay="leak"]').css("opacity", "1");
+            $('div[data-overlay="lights"]').css("opacity", "0.4");
         }
         
         if(update >= 15){
             playSound("whitenoise", 0.04);
             playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
+        }
+        
+        
+        if(update >= 20){
+            
+            $('div[data-overlay="lights"]').css("opacity", "0.7");
         }
         
     })
@@ -124,7 +138,8 @@ function magicPlay(what){
             break;
             
         case "7":
-            playSound("door", 0.7, 0, 1);
+            playSound("honk", 0.7, 0, 1);
+            
             break;
     }
     
