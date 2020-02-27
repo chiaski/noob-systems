@@ -221,7 +221,7 @@ var watchers = [
     },
     {
         title: "Iwate, Miyako, Japan",
-        link: "http://114.184.118.121:50000/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582774509",
+        link: "http://214.253.118.219.megaegg.ne.jp/-wvhttp-01-/GetOneShot?v=640&frame_count=no_limit",
         geography: "Iwate, Miyako, Japan",
         coordinates: "39.633000, 141.950000"
     },
@@ -230,6 +230,18 @@ var watchers = [
         link: "http://81.83.10.9:8001/mjpg/video.mjpg",
         geography: "Antwerpen, Antwerpen, Belgium",
         coordinates: "51.219890, 4.403460"
+    },
+    {
+        title: "University of Maryland - McKeldin Mall",
+        link: "http://129.2.16.181/mjpg/video.mjpg",
+        geography: "University of Maryland - McKeldin Mall",
+        coordinates: "39.266900, -76.848000"
+    },
+    {
+        title: "Ostrobothnia, Vaasa",
+        link: "http://comfort-camp.dyndns.org/cgi-bin/faststream.jpg",
+        geography: "Ostrobothnia, Vaasa",
+        coordinates: "63.096000, 21.615770"
     },
     {
         title: "Ostrobothnia, Vaasa",
