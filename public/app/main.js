@@ -36,12 +36,13 @@ $(function () {
         
         if(update >= 12){
             playSound("whitenoise", 0.02);
-           playFile(chooseSound("nature"), 0.2, 0);
+            playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
         }
         
         if(update >= 15){
             playSound("whitenoise", 0.04);
+            playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
         }
         
