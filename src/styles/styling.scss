@@ -1,6 +1,5 @@
 #camera{
     box-sizing: border-box;
-    background:#ccc;
     padding:.5em;
 }
 
@@ -9,6 +8,28 @@
     width:100%;
     text-align: center;
     
+}
+
+.camera-cover{
+    position: fixed;
+    top:0; left: 0;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    background-size: cover;
+    background-image:url(../camera-cover.png);
+    z-index:9999;
+}
+
+.camera-cover[data-overlay="scanline"]{
+    background-size: cover;
+    background-image:url(/camera-cover.png);
+    background: red;
+}
+
+.camera-cover[data-overlay='lightleak']{
+    background-size: cover;
+    background-image:url(../camera-light.jpg);
 }
 
 .camera img{

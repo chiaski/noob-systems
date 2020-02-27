@@ -158,11 +158,61 @@ var watchers = [
         link: "http://96.91.239.26:1024/mjpg/video.mjpg",
         geography: "New Jersey, Mount Laurel, USA",
         coordinates: "39.947820, -74.911680"
+    },
+    {
+        title: "I LOVE LAZY",
+        link: "http://121.7.129.29/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582772429",
+        geography: "Singapore",
+        coordinates: "1.289670, 103.850070"
+    },
+    {
+        title: "Tamil Nadu, Chennai",
+        link: "http://119.226.50.195/oneshotimage1?0",
+        geography: "Tamil Nadu, Chennai, India",
+        coordinates: "13.087840, 80.278470"
+    },
+    {
+        title: "North Carolina, Henderson",
+        link: "http://66.57.117.166:8000/mjpg/video.mjpg",
+        geography: "North Carolina, Henderson, USA",
+        coordinates: "36.329590, -78.399160"
+    },
+    {
+        title: "T'Ai-Wan, Zhongxing New Villag",
+        link: "http://59.126.33.9/webcapture.jpg?command=snap&channel=1?1582772574",
+        geography: "T'Ai-Wan, Zhongxing New Villag, Taiwan",
+        coordinates: "23.959080, 120.685160"
+    },
+    {
+        title: "Distrito Federal, Mexico City",
+        link: "http://148.247.162.116/cgi-bin/viewer/video.jpg?r=1582772621",
+        geography: "Distrito Federal, Mexico City, Mexico",
+        coordinates: "19.428470, -99.127660"
+    },
+    {
+        title: "T'Ai-Wan, Yilan",
+        link: "http://140.111.180.117:90/GetData.cgi?CH=1",
+        geography: "T'Ai-Wan, Yilan, Taiwan",
+        coordinates: "24.757000, 121.753000"
+    },
+    {
+        title: "Central Serbia, Belgrade",
+        link: "http://91.234.133.122:8080/cam_1.cgi",
+        geography: "Central Serbia, Belgrade, Serbia",
+        coordinates: "44.804010, 20.465130"
+    },
+    {
+        title: "???",
+        link: "http://109.109.80.252/mjpg/video.mjpg",
+        geography: "Norway",
+        coordinates: "59.912730, 10.746090"
     }
 ]
 
 
-// load camera
+
+
+// LOAD CAMERA INFORMATION
 
  $( document ).ready(function() {
      
