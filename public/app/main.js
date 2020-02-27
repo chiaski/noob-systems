@@ -70,6 +70,14 @@ function magicPlay(what){
             playSound("press", 0.3, 0);
             break;
             
+        case "2":
+            yourVoice();
+            break;
+            
+        case "3":
+            playSound("thunder", 0.3, 0);
+            break;
+            
     }
     
 }
@@ -128,13 +136,20 @@ function playFile(sound, vol){
     
 }
 
-function yourVoice(){
+function yourVoice(effect){
+    
+    var distortion = new Pizzicato.Effects.Distortion({
+    feedback: 0.6,
+    gain: 0.4
+    });
+    
     var voice = new Pizzicato.Sound({
     source: 'input',
     options: { volume: 0.8 }
-}, function() {
-    voice.play();
-});
+    }, function() {
+        voice.addEffect(distortion);
+        voice.play();
+    });
     
 }
 
