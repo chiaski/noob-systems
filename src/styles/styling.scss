@@ -67,6 +67,7 @@ div[data-overlay="lights"]{
 
 .camera-details{
     
+    mix-blend-mode:difference;
     z-index:9;
     margin-top:-150px;
     

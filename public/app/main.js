@@ -1,14 +1,24 @@
-console.log("hi");
-
-
-
 
 // LOAD CAMERA INFORMATION
 
+
+var start = false;
+
+var socket = io();
+socket.on('connectCounter', function(update){
+            $(".camera-viewers").text("Now watching: " + update + " viewers");
+        })
+        
+
+
  $( document ).click(function() {
      
+     if(start) return;
+     start = true;
+     
+     console.log("earth online.")
+     
      let choose = Math.floor(Math.random() * watchers.length);
-     console.log(choose, watchers[choose]);
      
     // Set it up
      
@@ -22,11 +32,34 @@ console.log("hi");
      
      // Set the sound
      
-     var audio = new Audio("../assets/earth/" + sounder["whitenoise"]);
-     audio.volume = 0.05;
-     audio.loop = true;
      
-     audio.play();
+     playSound("whitenoise", 0.03);
+     
+     console.log("multiple rains ", sounder["rain"])
+     
            
            
 });
+
+function playSound(sound, vol){
+    
+    let audio = new Audio("../assets/earth/" + sounder[sound]);
+    
+    if(!vol){
+        audio.volume = 0.1;
+    } else{
+        audio.volume = vol;
+    }
+    
+    audio.loop = true;
+    audio.play();
+    
+}
+
+function chooseSound(sound){
+    
+    let choose = Math.floor(Math.random() * sound.length);
+    
+    return sound[choose];
+    
+}

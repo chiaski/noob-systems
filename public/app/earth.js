@@ -3,7 +3,8 @@
 
 var sounder = {
 
-    whitenoise: "whitenoise.mp3"
+    whitenoise: "whitenoise.mp3",
+    rain: ["rainy-1.ogg", "rainy-2.flac"]
     
 }
 
