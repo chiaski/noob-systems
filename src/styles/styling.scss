@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/qxd7seh.css");
 
 body {
-    background: #000000;
+    background: #161619;
     color: #fff;
     font-family: input-mono, monospace;
     font-weight: 400;
@@ -9,6 +9,10 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+#container{
+    background:#161619;
 }
 
 h1 {
@@ -31,11 +35,10 @@ h1 {
 #camera {
     box-sizing: border-box;
     padding: .5em;
-    max-width: 700px;
+    max-width: 1200px;
 }
 
 .camera {
-    mix-blend-mode: multiply;
     width: 100%;
     text-align: center;
     border: 1em solid #161619;
@@ -64,8 +67,9 @@ div[data-overlay="scanline"] {
 div[data-overlay="lights"] {
     background-size: cover;
     background-image: url(../camera-light.jpg);
-    mix-blend-mode: hue;
-    opacity: 0.15;
+    mix-blend-mode: screen;
+    opacity:0.1;
+    z-index:99;
 }
 
 .camera img {

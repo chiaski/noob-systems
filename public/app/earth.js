@@ -14,7 +14,9 @@ var sounder = {
     crowd: ["people-1.mp3", "people-2.mp3", "people-3.mp3"],
     computer: ["computer-1.mp3", "computer-2.mp3", "computer-3.mp3"],
     piano: "piano.mp3",
-    nature: ["nature.mp3", "nature-2.mp3", "nature-3.mp3", "nature-4.mp3"]
+    nature: ["nature.mp3", "nature-2.mp3", "nature-3.mp3", "nature-4.mp3"],
+    door: "door.mp3",
+    honk: "honk.mp3"
     
 }
 
