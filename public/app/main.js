@@ -71,6 +71,14 @@ $(function () {
     
 });
         
+$(window).keypress(function (e) {
+  if (e.key === ' ' || e.key === 'Spacebar') {
+    // ' ' is standard, 'Spacebar' was used by IE9 and Firefox < 37
+    e.preventDefault()
+    console.log('Space pressed');
+      magic('switch');
+  }
+})
 
 
  $( document ).click(function() {
@@ -115,6 +123,27 @@ function magic(what){
 function magicPlay(what){
     
     switch(what){
+            
+        case "switch":
+             let choose = Math.floor(Math.random() * watchers.length);
+let place = watchers[choose];
+
+             $(".camera-details .place-title").text(place.title);
+             $(".camera img").attr("src", place.link);
+
+             $(".camera-details .place-geography").text(place.geography);
+             $(".camera-details .place-coordinates").text(place.coordinates);
+            // Set it up
+            $("#change").fadeIn();
+            setTimeout(
+              function() 
+              {
+                  
+            $("#change").fadeOut();
+              }, 3000);
+
+             
+            break;
             
         case "1":
             playSound("press", 0.3, 0);

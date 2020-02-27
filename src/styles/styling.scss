@@ -27,8 +27,22 @@ h1 {
     bottom: 0;
 }
 
+#change{
+    z-index:9999;
+    position:fixed;
+    top:0; left:0;
+    text-align:center;
+    width:100%;
+    height:100%;
+    line-height: 100vh;
+    background-image: url(../camera-static.gif);
+    background-repeat: repeat;
+    background-size: 40%;
+    display: none;   
+}
+
 #warning{
-    z-index:999999;
+    z-index:999;
     position:absolute;
     text-align:center;
     width:100%;
