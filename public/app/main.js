@@ -56,6 +56,66 @@ var watchers = [
         link: "http://87.249.112.189/mjpg/video.mjpg",
         geography: "Overijssel, Enschede, Netherlands",
         coordinates: "52.218330, 6.895830"
+    },
+    {
+        title: "Dark Horse Observatory - South",
+        link: "http://dho-south.viewnetcam.com:50000/nphMotionJpeg?resolution=640x480",
+        geography: "Phoenixville, Pennsylvania, USA",
+        coordinates: "40.124599, -75.538498"
+    },
+    {
+        title: "White Mountain Country Club",
+        link: "http://wmccpinetop.axiscam.net/mjpg/video.mjpg",
+        geography: "Pinetop, Arizona, USA",
+        coordinates: "34.640900 / -110.112600"
+    },
+    {
+        title: "CBS 47 on E McKinley Ave",
+        link: "http://205.157.152.230/mjpg/video.mjpg",
+        geography: "Fresno, California, USA",
+        coordinates: "36.769500, -119.795100"
+    },
+    {
+        title: "Dark Horse Observatory - South",
+        link: "http://dho-south.viewnetcam.com:50000/nphMotionJpeg?resolution=640x480",
+        geography: "Phoenixville, Pennsylvania, USA",
+        coordinates: "40.124599, -75.538498"
+    },
+    {
+        title: "Colorado, Colorado Springs",
+        link: "http://162.245.149.145/mjpg/video.mjpg",
+        geography: "Colorado, Colorado Springs, USA",
+        coordinates: "38.791779, -104.826480"
+    },
+    {
+        title: "Marche, Corinaldo",
+        link: "http://185.76.57.45/mjpg/video.mjpg",
+        geography: "Corinaldo, Marche, Italy",
+        coordinates: "43.649860, 13.048160"
+    },
+    {
+        title: "Colorado, Colorado Springs",
+        link: "http://162.245.149.145/mjpg/video.mjpg",
+        geography: "Colorado, Colorado Springs, USA",
+        coordinates: "38.791779, -104.826480"
+    },
+    {
+        title: "Colorado, Colorado Springs",
+        link: "http://162.245.149.145/mjpg/video.mjpg",
+        geography: "Colorado, Colorado Springs, USA",
+        coordinates: "38.791779, -104.826480"
+    },
+    {
+        title: "Colorado, Colorado Springs",
+        link: "http://162.245.149.145/mjpg/video.mjpg",
+        geography: "Colorado, Colorado Springs, USA",
+        coordinates: "38.791779, -104.826480"
+    },
+    {
+        title: "Colorado, Colorado Springs",
+        link: "http://162.245.149.145/mjpg/video.mjpg",
+        geography: "Colorado, Colorado Springs, USA",
+        coordinates: "38.791779, -104.826480"
     }
 ]
 
