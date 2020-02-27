@@ -347,6 +347,78 @@ var watchers = [
         link: "http://142.154.137.29/mjpg/video.mjpg",
         geography: "Alabama, Troy",
         coordinates: "31.802648, -85.963972"
+    },
+    {
+        title: "Nevada, Reno",
+        link: "http://142.154.137.29/mjpg/video.mjpg",
+        geography: "Nevada, Reno",
+        coordinates: "39.529630, -119.813800"
+    },
+    {
+        title: "British Columbia, Burnaby",
+        link: "http://96.1.54.219:8001/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Canada",
+        coordinates: "49.232424, -123.023260"
+    },
+    {
+        title: "Bagmati, Kathmandu",
+        link: "http://202.52.234.190:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818587",
+        geography: "Bagmati, Kathmandu",
+        coordinates: "27.701690, 85.320600"
+    },
+    {
+        title: "Arbil, Erbil, Iraq",
+        link: "http://185.38.214.194/webcapture.jpg?command=snap&channel=1?1582818645",
+        geography: "Iraq",
+        coordinates: "36.192570, 44.010620"
+    },
+    {
+        title: "Tbilisi, Tbilisi, Georgia",
+        link: "http://92.54.211.49:85/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818675",
+        geography: "Tbilisi, Tbilisi",
+        coordinates: "41.694110, 44.833680"
+    },
+    {
+        title: "Ar Riyad, Riyadh",
+        link: "http://37.99.153.106:83/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Riyadh",
+        coordinates: "24.687730, 46.721850"
+    },
+    {
+        title: "Shandong, Liaocheng",
+        link: "http://39.70.203.211:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818787",
+        geography: "Liaocheng",
+        coordinates: "36.443890, 115.964720"
+    },
+    {
+        title: "Liaoning, Chaoyang",
+        link: "http://60.23.164.211:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818812",
+        geography: "Liaoning, Chaoyang",
+        coordinates: "40.457420, 123.550630"
+    },
+    {
+        title: "Hebei, Shijiazhuang",
+        link: "http://111.61.39.241:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818880",
+        geography: "Hebei, Shijiazhuang",
+        coordinates: "38.041390, 114.478610"
+    },
+    {
+        title: "Nova Scotia, Wolfville",
+        link: "http://61.149.161.158:91/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582818922",
+        geography: "Nova Scotia, Wolfville",
+        coordinates: "45.083450, -64.365460"
+    },
+    {
+        title: "Quebec, Montreal",
+        link: "http://24.157.251.157:8082/mjpg/video.mjpg",
+        geography: "Quebec, Montreal",
+        coordinates: "45.527258, -73.612361"
+    },
+    {
+        title: "Quebec, Montreal",
+        link: "http://74.15.176.151:10000/snap.jpg?JpegSize=M&JpegCam=1&r=1582819077",
+        geography: "Quebec, Montreal",
+        coordinates: "45.501580, -73.564866"
     }
    
 ]
