@@ -11,8 +11,8 @@ var sounder = {
     walking: ["walking-1.mp3"],
     hiss: "hiss-1.wav",
     church: "churchbells.mp3",
-    crowd: ["people-1.mp3"]
-    
+    crowd: ["people-1.mp3"],
+    computer: ["computer-1.mp3", "computer-2.mp3", "computer-3.mp3"],
     
 }
 

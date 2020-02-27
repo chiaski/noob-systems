@@ -10,8 +10,13 @@ $(function () {
     socket.on('connectCounter', function(update){
                 $(".camera-viewers").text("Now watching: " + update + " viewers");
 
+        if(update == 1){
+            
+            $("h1").text("OPEN CAMERA");
+        }
+        
         if(update >= 3){
-            //playFile(chooseSound("rain"));
+            playFile(chooseSound("computer"), .2, 1);
         }
 
         if(update >= 4){
@@ -128,10 +133,6 @@ function playSound(sound, vol, loop){
         audio.addEffect(distortion);
         audio.play();
     });
-    
-    //let audio = new Audio("../assets/earth/" + sounder[sound]);
-    
-    /**/
     
 }
 
