@@ -35,8 +35,15 @@ $(function () {
         }
         
         if(update >= 12){
+            playSound("whitenoise", 0.02);
             $("h1").text("all of us follow");
         }
+        
+        if(update >= 15){
+            playSound("whitenoise", 0.04);
+            $("h1").text("all of us follow");
+        }
+        
     })
 
     socket.on("magic", function(what){

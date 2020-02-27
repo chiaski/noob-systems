@@ -275,6 +275,24 @@ var watchers = [
         link: "http://113.161.21.10:8082/video/mjpg.cgi",
         geography: "Dak Lak, Buon Ma Thuot, Vietnam",
         coordinates: "12.666670, 108.050000"
+    },
+    {
+        title: "Wien, Vienna",
+        link: "http://81.223.119.106/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Wien, Vienna, Austria",
+        coordinates: "48.208490, 16.372080"
+    },
+    {
+        title: "Soldanesti",
+        link: "http://188.237.8.183:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582817990",
+        geography: "Soldanesti, Soldanesti, Republic of Moldova",
+        coordinates: "47.815280, 28.796670"
+    },
+    {
+        title: "Zurich",
+        link: "http://213.3.32.49:9010/mjpg/video.mjpg",
+        geography: "Zurich",
+        coordinates: "47.366670, a8.550000"
     }
    
 ]
