@@ -206,7 +206,50 @@ var watchers = [
         link: "http://109.109.80.252/mjpg/video.mjpg",
         geography: "Norway",
         coordinates: "59.912730, 10.746090"
+    },
+    {
+        title: "Mazowieckie, Warsaw",
+        link: "http://31.0.162.174/cgi-bin/viewer/video.jpg?r=1582774234",
+        geography: "Mazowieckie, Warsaw",
+        coordinates: "52.229770, 21.011780"
+    },
+    {
+        title: "New South Wales, Sydney",
+        link: "http://123.209.248.124/mjpg/video.mjpg",
+        geography: "New South Wales, Sydney",
+        coordinates: "-33.867850, 151.207320"
+    },
+    {
+        title: "Iwate, Miyako, Japan",
+        link: "http://114.184.118.121:50000/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582774509",
+        geography: "Iwate, Miyako, Japan",
+        coordinates: "39.633000, 141.950000"
+    },
+    {
+        title: "Antwerpen, Antwerpen",
+        link: "http://81.83.10.9:8001/mjpg/video.mjpg",
+        geography: "Antwerpen, Antwerpen, Belgium",
+        coordinates: "51.219890, 4.403460"
+    },
+    {
+        title: "Ostrobothnia, Vaasa",
+        link: "http://81.209.111.165:8081/cam_1.cgi",
+        geography: "Ostrobothnia, Vaasa",
+        coordinates: "63.096000, 21.615770"
+    },
+    {
+        title: "???",
+        link: "http://212.60.62.51:8080/mjpg/video.mjpg",
+        geography: "Bern, Biel, Switzerland",
+        coordinates: "47.132400, 7.244110"
+    },
+    {
+        title: "Dak Lak, Buon Ma Thuot",
+        link: "http://113.161.21.10:8082/video/mjpg.cgi",
+        geography: "Dak Lak, Buon Ma Thuot, Vietnam",
+        coordinates: "12.666670, 108.050000"
     }
+   
 ]
 
 

@@ -17,18 +17,22 @@
     height:100%;
     pointer-events: none;
     background-size: cover;
-    background-image:url(../camera-cover.png);
-    z-index:9999;
+    z-index:999;
 }
 
-.camera-cover[data-overlay="scanline"]{
+
+div[data-overlay="scanline"]{
     background-size: cover;
-    background-image:url(/camera-cover.png);
+    background-image:url(../camera-cover.png);
+    mix-blend-mode: screen !important;
+    opacity: 0.3;
 }
 
-.camera-cover[data-overlay='lightleak']{
+div[data-overlay="lights"]{
     background-size: cover;
     background-image:url(../camera-light.jpg);
+    background: yellow;
+    opacity:1;
 }
 
 .camera img{
