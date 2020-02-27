@@ -44,6 +44,18 @@ var watchers = [
         link: "http://122.52.148.206:50001/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582769167",
         geography: "Butuan, Philippines",
         coordinates: "8.949170, 125.543610"
+    },
+    {
+        title: "Greene St",
+        link: "http://madisoncam.viewnetcam.com/nphMotionJpeg?Resolution=640x480&Quality=Clarity",
+        geography: "Greene St, Jersey City New Jersey, USA",
+        coordinates: "40.676000, -73.962900"
+    },
+    {
+        title: "Overijssel, Enschede",
+        link: "http://87.249.112.189/mjpg/video.mjpg",
+        geography: "Overijssel, Enschede, Netherlands",
+        coordinates: "52.218330, 6.895830"
     }
 ]
 
