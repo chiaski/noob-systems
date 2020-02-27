@@ -415,10 +415,160 @@ var watchers = [
         coordinates: "45.527258, -73.612361"
     },
     {
-        title: "Quebec, Montreal",
-        link: "http://74.15.176.151:10000/snap.jpg?JpegSize=M&JpegCam=1&r=1582819077",
-        geography: "Quebec, Montreal",
-        coordinates: "45.501580, -73.564866"
+        title: "British Columbia, Victoria",
+        link: "http://70.66.91.73:84/mjpg/video.mjpg",
+        geography: "British Columbia, Victoria",
+        coordinates: "48.432940, -123.369300"
+    },
+    {
+        title: "Michigan, Oscoda",
+        link: "http://75.133.34.214:60001/mjpg/video.mjpg",
+        geography: "USA",
+        coordinates: "44.420280, -83.330830"
+    },
+    {
+        title: "Aargau, Fulenbach",
+        link: "http://213.221.223.242:82/mjpg/video.mjpg",
+        geography: "Switzerland",
+        coordinates: "47.274960, 7.833440"
+    },
+    {
+        title: "Guatemala, Guatemala City",
+        link: "http://181.174.113.11:90/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Guetemala",
+        coordinates: "14.640720, -90.513270"
+    },
+    {
+        title: "British Columbia, Castlegar",
+        link: "http://162.245.241.26:8082/mjpg/video.mjpg",
+        geography: "British Columbia, Castlegar",
+        coordinates: "49.325023, -117.667213"
+    },
+    {
+        title: "Alberta, Calgary",
+        link: "http://70.75.97.49:8090/mjpg/video.mjpg",
+        geography: "Canada",
+        coordinates: "51.05074, -114.075952"
+    },
+    {
+        title: "Seoul-Teukbyeolsi, Seoul",
+        link: "http://119.206.74.42:8000/webcapture.jpg?command=snap&channel=1?1582819413",
+        geography: "Seoul",
+        coordinates: "51.05074, -114.075952"
+    },
+    {
+        title: "Ile-De-France, Jouy-Le-Moutier",
+        link: "http://92.154.48.50:8083/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "France",
+        coordinates: "49.010680, 2.040280"
+    },
+    {
+        title: "Hlavni Mesto Praha, Prague",
+        link: "http://212.47.24.208:83/mjpg/video.mjpg",
+        geography: "Czech Republic",
+        coordinates: "50.088040, 14.420760"
+    },
+    {
+        title: "England, Lindley",
+        link: "http://81.149.56.38:8084/mjpg/video.mjpg",
+        geography: "United Kingdom",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "England, London",
+        link: "http://81.130.136.82:83/mjpg/video.mjpg",
+        geography: "United Kingdom",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Cherkaska Oblast, Zolotonosha",
+        link: "http://195.189.249.149:8081/webcapture.jpg?command=snap&channel=1?1582819595",
+        geography: "Ukraine",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "England, Leeds",
+        link: "http://176.35.183.10:1024/mjpg/video.mjpg",
+        geography: "United Kingdom",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "New Jersey, Randolph",
+        link: "http://24.45.4.187/mjpg/video.mjpg",
+        geography: "USA",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "England, Lostock",
+        link: "http://188.66.75.36/mjpg/video.mjpg",
+        geography: "United Kingdom",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Salzburg, Salzburg",
+        link: "http://89.26.25.221/mjpg/video.mjpg",
+        geography: "Austria",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Lombardia, Milan",
+        link: "http://213.82.216.229/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Italy",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Canada",
+        link: "http://66.51.132.214:8080/?action=stream",
+        geography: "Canada",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Missouri, Columbia",
+        link: "http://128.206.113.98/mjpg/video.mjpg",
+        geography: "Missouri, Columbia",
+        coordinates: "38.945570, -92.323860"
+    },
+    {
+        title: "East Kazakhstan, Ust'-Kamenogorsk",
+        link: "http://212.154.245.179/jpg/image.jpg?1582819884",
+        geography: "East Kazakhstan, Ust'-Kamenogorsk",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Kyiv, Kiev",
+        link: "http://77.52.149.60:8080/mjpg/video.mjpg",
+        geography: "Kyiv, Kiev",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Colorado, Louisville",
+        link: "http://208.139.200.133/mjpg/video.mjpg",
+        geography: "USA",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Massachusetts, Cambridge",
+        link: "http://216.15.124.90/cgi-bin/faststream.jpg?stream=half&fps=15&rand=COUNTER",
+        geography: "Massachusetts, Cambridge",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Veneto, Padova",
+        link: "http://185.39.101.26/mjpg/video.mjpg",
+        geography: "Veneto, Padova",
+        coordinates: "53.650000, -1.816670"
+    },
+    {
+        title: "Basilicata, Melfi",
+        link: "http://46.231.37.195:8090/mjpg/video.mjpg",
+        geography: "Basilicata, Melfi",
+        coordinates: "40.996520, 15.651360"
+    },
+    {
+        title: "Dublin City, Dublin",
+        link: "http://93.107.245.52:1024/mjpg/video.mjpg",
+        geography: "Dublin City, Dublin",
+        coordinates: "53.650000, -1.816670"
     }
    
 ]
