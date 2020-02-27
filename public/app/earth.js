@@ -292,7 +292,61 @@ var watchers = [
         title: "Zurich",
         link: "http://213.3.32.49:9010/mjpg/video.mjpg",
         geography: "Zurich",
-        coordinates: "47.366670, a8.550000"
+        coordinates: "47.366670, 8.550000"
+    },
+    {
+        title: "Haukeliseter Fjellstue",
+        link: "http://94.139.67.154:50000/mjpg/video.mjpg",
+        geography: "Norway",
+        coordinates: "59.912730, 10.746090"
+    },
+    {
+        title: "Arizona, Tucson",
+        link: "http://192.33.141.16/mjpg/video.mjpg",
+        geography: "Arizona, Tucson, USA",
+        coordinates: "32.231312, -110.949840"
+    },
+    {
+        title: "Csongrad, Szeged",
+        link: "http://46.35.192.141/mjpg/video.mjpg",
+        geography: "Csongrad, Szeged, Hungary",
+        coordinates: "46.253000, 20.148240"
+    },
+    {
+        title: "Tochigi, Utsunomiya",
+        link: "http://124.44.170.217:8082/cgi-bin/camera?resolution=640&amp;quality=1&amp;Language=0&amp;1582818253",
+        geography: "Tochigi, Utsunomiya, Japan",
+        coordinates: "36.550000, 139.883000"
+    },
+    {
+        title: "Selangor, Petaling Jaya",
+        link: "http://183.171.14.104:8082/cgi-bin/viewer/video.jpg?r=1582818308",
+        geography: "Selangor, Petaling Jaya, Malaysia",
+        coordinates: "3.107260, 101.606710"
+    },
+    {
+        title: "Tel Aviv, Tel Aviv",
+        link: "http://82.80.172.78:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&1582818338",
+        geography: "Israel",
+        coordinates: "32.080880, 34.780570"
+    },
+    {
+        title: "Ontario, Etobicoke",
+        link: "http://174.90.202.82:8082/snap.jpg?JpegSize=M&JpegCam=1&r=1582818363",
+        geography: "Ontario, Etobicoke",
+        coordinates: "43.621609, -79.509737"
+    },
+    {
+        title: "Illes Balears, Palma",
+        link: "http://195.77.167.54/mjpg/video.mjpg",
+        geography: "Illes Balears, Palma, Spain",
+        coordinates: "39.569390, 2.650240"
+    },
+    {
+        title: "Alabama, Troy",
+        link: "http://142.154.137.29/mjpg/video.mjpg",
+        geography: "Alabama, Troy",
+        coordinates: "31.802648, -85.963972"
     }
    
 ]
