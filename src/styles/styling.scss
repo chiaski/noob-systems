@@ -31,8 +31,8 @@ div[data-overlay="scanline"]{
 div[data-overlay="lights"]{
     background-size: cover;
     background-image:url(../camera-light.jpg);
-    background: yellow;
-    opacity:1;
+    mix-blend-mode: lighten;
+    opacity:0.15;
 }
 
 .camera img{
