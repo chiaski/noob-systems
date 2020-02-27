@@ -16,7 +16,8 @@ var sounder = {
     piano: "piano.mp3",
     nature: ["nature.mp3", "nature-2.mp3", "nature-3.mp3", "nature-4.mp3"],
     door: "door.mp3",
-    honk: "honk.mp3"
+    honk: "honk.mp3",
+    hymn: ["hymn.mp3", "hymn-2.mp3"]
     
 }
 

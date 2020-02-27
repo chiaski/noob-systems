@@ -39,6 +39,14 @@ $(function () {
             $("h1").text("rarely are we alone");
             
             playFile(chooseSound("computer"), .4, 0, 1);
+            playFile(chooseSound("hymn"), .05, 0);
+            
+        }
+        
+        if(update >= 10){
+            
+            playFile(chooseSound("hymn"), .1, 0, 1);
+            
         }
         
         if(update >= 12){
@@ -51,12 +59,14 @@ $(function () {
             $('div[data-overlay="lights"]').css("opacity", "0.4");
         }
         
+        
         if(update >= 15){
             playSound("whitenoise", 0.04);
             playFile(chooseSound("nature"), 0.2, 0);
             $("h1").text("all of us follow");
         }
         
+    
         
         if(update >= 20){
             
@@ -106,7 +116,6 @@ $(window).keypress(function (e) {
      $(".camera-details .place-coordinates").text(place.coordinates);
      
      // Set the sound
-     
      
      playSound("whitenoise", 0.005);
      //playFile(chooseSound("rain"), 0.03);       
@@ -205,6 +214,11 @@ function playSound(sound, vol, loop, repeat){
         audio.addEffect(distortion);
         soundStates.push(sound);
         audio.play();
+        
+        if(loop == false){
+            soundStates.pop();
+        }
+
     });
     
 }
@@ -228,6 +242,10 @@ function playFile(sound, vol, loop, repeat){
         
     soundStates.push(sound);
     audio.play();
+    
+    if(loop == false){
+        soundStates.pop();
+    }
     
 }
 
