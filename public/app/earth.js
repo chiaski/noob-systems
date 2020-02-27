@@ -6,8 +6,12 @@ var sounder = {
     whitenoise: "whitenoise.mp3",
     rain: ["rainy-1.ogg", "rainy-2.flac"],
     car: "car.mp3",
-    thunder: "thunder.wav",
-    press: "press.mp3"
+    thunder: "thunder.mp3",
+    press: "press.mp3",
+    walking: ["walking-1.mp3"],
+    hiss: "hiss-1.wav",
+    church: "churchbells.mp3",
+    crowd: ["people-1.mp3"]
     
     
 }

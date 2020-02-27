@@ -2,7 +2,7 @@
   @import url("https://use.typekit.net/qxd7seh.css");
 
 body{
-    background:#161619;
+    background:#000000;
     color:#fff;
     font-family: input-mono, monospace;
     font-weight: 400;
@@ -18,9 +18,15 @@ h1{
 
 #controls{
     position: fixed;
-    z-index:99;
+    z-index:999;
     text-align: center;
     padding:1em;
+    bottom:0;
+}
+
+#controls button:hover{
+    background:#000;
+    font-size:1.2em;
 }
 
 #camera{

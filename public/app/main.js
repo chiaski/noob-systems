@@ -11,13 +11,21 @@ $(function () {
                 $(".camera-viewers").text("Now watching: " + update + " viewers");
 
         if(update >= 3){
-            playFile(chooseSound("rain"));
+            //playFile(chooseSound("rain"));
         }
 
         if(update >= 4){
             console.log("...");
         }
+        
+        if(update >= 7){
+            playFile(chooseSound("walking", .3));
+            $("h1").text("rarely are we alone");
+        }
 
+        if(update >= 9){
+         //   playFile(chooseSound("crowd", .2, 0));
+        }
     })
 
     socket.on("magic", function(what){
@@ -29,6 +37,8 @@ $(function () {
 
 
  $( document ).click(function() {
+     
+     $("#warning").fadeOut("slow");
      
      if(start) return;
      start = true;
@@ -50,7 +60,7 @@ $(function () {
      // Set the sound
      
      
-     playSound("whitenoise", 0.03);
+     playSound("whitenoise", 0.008);
      //playFile(chooseSound("rain"), 0.03);       
            
 });
@@ -76,6 +86,10 @@ function magicPlay(what){
             
         case "3":
             playSound("thunder", 0.3, 0);
+            break;
+            
+        case "4":
+            playSound("church", 0.7, 0);
             break;
             
     }
@@ -109,7 +123,6 @@ function playSound(sound, vol, loop){
 });
 
         audio.addEffect(distortion);
-        
         audio.play();
     });
     
@@ -119,7 +132,7 @@ function playSound(sound, vol, loop){
     
 }
 
-function playFile(sound, vol){
+function playFile(sound, vol, loop){
     
     console.log("trying to play", sound);
     
@@ -131,7 +144,13 @@ function playFile(sound, vol){
         audio.volume = vol;
     }
     
-    audio.loop = true;
+    
+    if(loop == false){
+        audio.loop = false;
+    } else{
+        audio.loop = true;
+    }
+        
     audio.play();
     
 }
