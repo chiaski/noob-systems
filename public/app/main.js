@@ -80,6 +80,9 @@ $(function () {
      if(start) return;
      start = true;
      
+     
+    $('div[data-overlay="static"]').css("mix-blend-mode", "lighten");
+     
      console.log("earth online.")
      
      let choose = Math.floor(Math.random() * watchers.length);
