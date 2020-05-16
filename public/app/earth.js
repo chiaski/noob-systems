@@ -617,6 +617,18 @@ var watchers = [
         link: "http://208.13.138.35/mjpg/video.mjpg",
         geography: "Florida, USA",
         coordinates: "28.598724, -81.356120"
+    },
+    {
+        title: "QUARANTINE",
+        link: "http://46.132.186.148/cgi-bin/viewer/video.jpg?r=1589669865",
+        geography: "Uusimaa, Ekenas",
+        coordinates: "59.973590, 23.433890"
+    },
+    {
+        title: "SHOP",
+        link: "http://70.26.217.150:60001/cgi-bin/snapshot.cgi?chn=0&u=admin&p=&q=0&0",
+        geography: "Quebec, Montreal",
+        coordinates: "45.481426, -73.439789"
     }
    
 ]
